@@ -1,2 +1,1 @@
-# nsreekum.github.io
-Personal website
+# Simple website
