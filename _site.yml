@@ -2,7 +2,7 @@ name: "Nikhil Sreekumar"
 output_dir: 'docs'
 output:
   html_document:
-    theme: spacelab
+    theme: cerulean
     highlight: zenburn
     toc: true
     toc_depth: 2

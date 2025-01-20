@@ -1,0 +1,15 @@
+.question-box {
+    border: 2px solid #007bff; /* Blue border */
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #fffb07; /* Light gray background */
+    font-size: 20px;
+    text-align: center; /* Center the text */
+    font-weight: bold;  /* Make the text bold */
+    font-style: italic; /* Make the text italic */
+}
+
+.p {
+    text-align: justify;
+    font-size: 15px;
+}
