@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export",
-    "deploy": "npm run build && npm run export && git add out && git commit -m 'Deploy static site' && git push origin gh-pages"
+    "deploy": "npm run build && git add out && git commit -m 'Deploy static site' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

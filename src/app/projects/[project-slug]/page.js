@@ -32,7 +32,7 @@ export default async function ProjectPage({ params }) {
   return ( 
       <article>
           <h1>{project.title}</h1>
-          <p className="post-meta">{project.date}</p>
+          <p className="post-meta">{project.date.toLocaleDateString()}</p>
           <div className="post-content" dangerouslySetInnerHTML={{__html: htmlContent}}/>
       </article>
   );

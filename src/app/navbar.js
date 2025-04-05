@@ -9,9 +9,6 @@ function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="/posts">Posts</Link>
-        </li>
-        <li className={styles.navItem}>
           <Link href="/projects">Projects</Link>
         </li>
         <li className={styles.navItem}>
