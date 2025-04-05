@@ -1,0 +1,21 @@
+.bioContainer {
+  display: flex; /* Enable flexbox for side-by-side layout */
+  gap: 20px; /* Add some space between the image and text */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.imageContainer {
+  flex: 1; /* Allow the image container to take up available space */
+}
+
+.bioText {
+  flex: 2; /* Allow the bio text to take up more space */
+  text-align: justify;
+}
+
+/* Optional: Adjust image styles */
+.imageContainer img {
+  width: 100%; /* Make the image responsive within its container */
+  height: auto;
+  border-radius: 8px; /* Optional: Add rounded corners to the image */
+}

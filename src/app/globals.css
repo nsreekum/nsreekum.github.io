@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  height: 100%;
+}
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #004a8e;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+article {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+header {
+  padding: 2rem;
+  background-color: #1e90ff;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  font-size: 0.875rem;
+}
+
+.post-meta {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.post-content {
+  line-height: 1.8;
+}
+
+blockquote {
+  background-color: #f4f7fb;
+  border-left: 4px solid #1e90ff;
+  padding: 1rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+code {
+  background-color: #f4f7fb;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #282c34;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+}
+
+body.layout {
+  display: flex;
+  flex-direction:column;
+}
+
+.main-content {
+  flex-grow: 1; /* Allow main content to take up remaining vertical space */
+  padding-left: 20px; /* Add your desired left padding */
+  padding-right: 20px; /* Add your desired right padding */
+  /* You might want to set a maximum width to prevent content from stretching too wide on large screens */
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
