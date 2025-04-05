@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "GITHUB_USERNAME=nsreekum npm run build && git add . && git commit -m 'Build site' && rm -rf .gh-pages-temp && git checkout main && git checkout gh-pages && git rm -rf . && git checkout main && git worktree add .gh-pages-temp gh-pages && cp -r out/. .gh-pages-temp/ && cd .gh-pages-temp && git add . && git commit -m 'Deploy static site' && cd .. && git push origin gh-pages && git worktree remove .gh-pages-temp --force"
+    "deploy": "GITHUB_USERNAME=nsreekum npm run build && rm -rf .gh-pages-temp && git add . && git commit -m 'Build site' && git push origin main && git checkout main && git checkout gh-pages && git rm -rf . && git push origin gh-pages && git checkout main && mkdir -p .gh-pages-temp && git worktree add .gh-pages-temp gh-pages && cp -r out/. .gh-pages-temp/ && cd .gh-pages-temp && git add . && git commit -m 'Deploy static site' && cd .. && git push origin gh-pages && git worktree remove .gh-pages-temp --force"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
