@@ -1,0 +1,20 @@
+[
+    {
+      "name": "A Novel Method for X",
+      "year": 2024,
+      "authors": ["Author A", "Author B", "Author C"],
+      "venue": "Conference on Y"
+    },
+    {
+      "name": "Improved Performance of Z",
+      "year": 2023,
+      "authors": ["Author D", "Author E"],
+      "venue": "Journal of Advanced Studies"
+    },
+    {
+      "name": "Scalable Approach to W",
+      "year": 2022,
+      "authors": ["Author F"],
+      "venue": "Workshop on V"
+    }
+  ]
