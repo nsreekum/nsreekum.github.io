@@ -1,16 +1,14 @@
 const isProd = process.env.NODE_ENV === 'production'
 
-const repoName = 'nsreekum.github.io' // Replace this with your actual repo name
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: '',
+  assetPrefix: isProd ? '/' : '',
   basePath: '',
-  trailingSlash: true, // recommended for GitHub Pages
+  trailingSlash: true,
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
   },
-  output: 'export', // required for static export (`next export`)
+  output: 'export',
 }
 
 export default nextConfig
