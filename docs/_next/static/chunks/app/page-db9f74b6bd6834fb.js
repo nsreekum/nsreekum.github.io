@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[974],{8334:e=>{e.exports={bioContainer:"page_bioContainer__l0AgC",imageContainer:"page_imageContainer__gQbWL",bioText:"page_bioText__WJwQ_"}},9908:(e,_,i)=>{Promise.resolve().then(i.t.bind(i,3063,23)),Promise.resolve().then(i.t.bind(i,8334,23))}},e=>{var _=_=>e(e.s=_);e.O(0,[397,63,441,684,358],()=>_(9908)),_N_E=e.O()}]);
