@@ -7,7 +7,7 @@ import { FaGithub } from 'react-icons/fa'; // GitHub icon
 import { FaFilePdf } from 'react-icons/fa'; // PDF icon (adjust as needed)
 
 async function getProjects() {
-    const projects = ['armada', 'spall', 'spaarc', 'actsense'];
+    const projects = ['armada', 'spall', 'spaarc', 'actsense', 'pathweaver'];
     return Promise.all(projects.map(async (project) => {
         const slug = project;
         const filePath = path.join(process.cwd(), `src/app/projects/${slug}/project.md`);

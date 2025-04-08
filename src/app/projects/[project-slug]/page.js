@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 const md = MarkdownIt();
 
 export async function generateStaticParams() {
-  const projects = ['armada', 'spall', 'spaarc', 'actsense']; // Replace with your actual project slugs
+  const projects = ['armada', 'spall', 'spaarc', 'actsense', 'pathweaver']; // Replace with your actual project slugs
   return projects.map((project) => ({ 'project-slug': project }));
 }
 
@@ -22,7 +22,8 @@ async function getProject(slug) {
 }
 
 export default async function ProjectPage({ params }) {
-  const { 'project-slug': slug } = params;
+  const resolvedParams = await Promise.resolve(params);
+  const { 'project-slug': slug } = resolvedParams;
   const project = await getProject(slug);
   
   if(!project) notFound();
