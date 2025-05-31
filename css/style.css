@@ -1,0 +1,199 @@
+/* css/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+}
+
+header nav a {
+    color: #fff;
+    margin: 0.5rem 15px; /* Added vertical margin for wrapping */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus {
+    text-decoration: underline;
+}
+
+main {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    flex-grow: 1; /* Ensures main content takes available space */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    margin-top: auto; /* Pushes footer to the bottom */
+    width: 100%;
+}
+
+footer a {
+    color: #a0cfff; /* Light blue for links in footer */
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 0.75em;
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Links outside header/footer */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Basic Responsive Grid for Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: 1 column */
+    gap: 25px; /* Increased gap slightly */
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px; /* Increased padding */
+    border-radius: 8px; /* Slightly more rounded corners */
+    background-color: #f9f9f9; /* Light background for cards */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* Rounded corners for images */
+    margin-bottom: 15px;
+}
+
+.project-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.project-card h2 a {
+    color: #333; /* Ensure project title links are dark */
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.project-card a:not(h2 a) { /* Style for "View Project" link */
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:not(h2 a):hover {
+    background-color: #0056b3;
+}
+
+/* Project Detail Page */
+.project-detail {
+    padding: 10px;
+}
+
+.project-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.project-detail time {
+    display: block;
+    color: #555;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+
+/* Tablet and smaller desktops */
+@media (min-width: 600px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+}
+
+/* Larger desktops */
+@media (min-width: 900px) {
+    main {
+        width: 85%;
+        max-width: 1200px;
+    }
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+/* Responsive Navigation (Example: Stack links on small screens if preferred,
+   current flex-wrap handles basic wrapping already) */
+/*
+@media (max-width: 599px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav a {
+        margin: 10px 0;
+    }
+}
+*/

@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>{{ title }}</h1>
+{{ content | safe }} {# Renders the Markdown content from projects/index.md #}
+
+<div class="project-grid">
+    {# collections.project will contain all files tagged "project" #}
+    {# Sorted by date (newest first) if date is in front matter #}
+    {%- for project in collections.project | reverse -%}
+        <article class="project-card">
+            <h2><a href="{{ project.url | url }}">{{ project.data.title }}</a></h2>
+            {% if project.data.thumbnail %}
+                <img src="{{ project.data.thumbnail | url }}" alt="{{ project.data.title }} thumbnail">
+            {% endif %}
+            <p>{{ project.data.description }}</p>
+            <a href="{{ project.url | url }}">View Project &rarr;</a>
+        </article>
+    {%- endfor -%}
+</div>

@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+
+<article class="project-detail">
+    <h1>{{ title }}</h1>
+    {% if date %}
+        <p><time datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time></p>
+    {% endif %}
+    {# `content` here is the Markdown content of the specific project file #}
+    {{ content | safe }}
+</article>
