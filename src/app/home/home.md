@@ -1,6 +1,0 @@
----
-title: My Bio
-image: /images/overall_research.jpeg  # Path to your image in the public directory
----
-
-I am a PhD student advised by Prof. [Abhishek Chandra](https://cse.umn.edu/cs/abhishek-chandra) and Prof. [Jon Weissman](https://cse.umn.edu/cs/jon-weissman), [Computer Science and Engineering Department](https://cse.umn.edu/cs), University of Minnesota, Twin Cities, focusing my research on application aware data management in edge computing. Driven by the increasing volume of data at the network edge and the resource constraints of edge devices, my work explores efficient data handling strategies. I have investigated fundamental design principles for edge-native storage systems, contributed to latency-sensitive edge computing frameworks, and explored challenges in data placement and replication. My interests also extend to the intersection of data management and machine learning, including client selection for federated learning and prefetching strategies for augmented reality applications. Currently, I am researching energy efficient adaptive sensing techniques for IoT device longevity. My overarching goal is to optimize resource utilization, minimize latency, and improve energy efficiency in edge computing to support a wide range of emerging applications.
