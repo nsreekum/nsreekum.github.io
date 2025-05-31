@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+
+<h1>{{ title }}</h1>
+{{ content | safe }}
+
+<div class="publication-list">
+    {%- for publication in collections.publication | reverse -%}
+        <article class="publication-item">
+            <h2><a href="{{ publication.url | url }}">{{ publication.data.title }}</a></h2>
+            <div class="publication-meta">
+                <p class="authors">{{ publication.data.authors }}</p>
+                <p class="venue">{{ publication.data.venue }}</p>
+                <p class="year">{{ publication.data.year }}</p>
+            </div>
+            {% if publication.data.description %}
+                <p class="description">{{ publication.data.description }}</p>
+            {% endif %}
+            {% if publication.data.url %}
+                <a href="{{ publication.data.url }}" target="_blank" rel="noopener noreferrer">View Publication &rarr;</a>
+            {% endif %}
+        </article>
+    {%- endfor -%}
+</div> 
