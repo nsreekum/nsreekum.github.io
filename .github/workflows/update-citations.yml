@@ -22,9 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: |
-          npm install
-          npm install scholar-scraper
+        run: npm install
 
       - name: Update citations
         run: node scripts/update-citations.js
