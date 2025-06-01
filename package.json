@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "update-citations": "node scripts/update-citations.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0",
-    "luxon": "^3.6.1"
+    "luxon": "^3.6.1",
+    "scholar-scraper": "^1.0.0"
   }
 }

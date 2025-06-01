@@ -6,13 +6,17 @@ layout: layouts/base.njk
 {{ content | safe }}
 
 <div class="publication-list">
-    {%- for publication in collections.publication | reverse -%}
+    {%- set sortedPublications = collections.publication | sort(attribute="data.year") | reverse -%}
+    {%- for publication in sortedPublications -%}
         <article class="publication-item">
-            <h2><a href="{{ publication.url | url }}">{{ publication.data.title }}</a></h2>
+            <h2>{{ publication.data.title }}</h2>
             <div class="publication-meta">
                 <p class="authors">{{ publication.data.authors }}</p>
                 <p class="venue">{{ publication.data.venue }}</p>
                 <p class="year">{{ publication.data.year }}</p>
+                {% if publication.data.citations %}
+                    <p class="citations">Citations: {{ publication.data.citations }}</p>
+                {% endif %}
             </div>
             {% if publication.data.description %}
                 <p class="description">{{ publication.data.description }}</p>
